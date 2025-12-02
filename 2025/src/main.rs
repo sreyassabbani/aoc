@@ -11,8 +11,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     let args = (args[3].parse()?, args[4].parse()?);
 
     match args {
-        (1, 1) => day01::part1(),
-        (1, 2) => day01::part2(),
+        (1, 1) => day01::part1()?,
+        (1, 2) => day01::part2()?,
         _ => {}
     }
 
